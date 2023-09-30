@@ -1,12 +1,11 @@
 Feature: To validate the homepage of Amazon.in
 
-  #before
+  #uuuuu
   @Search
   Scenario: Search function of Amazon
     Given user should navigate to url
     When user enter the search keyword "table" and click on search icon
     Then user validate the message
-  #after
 
   @multi
   Scenario Outline: Search functionality with multiple data
@@ -39,5 +38,8 @@ Feature: To validate the homepage of Amazon.in
     Then verify whether the user naviages to baby wishlist page
       #after
 
+  @Table
+  Scenario: user handles the table
+    Given user iterates the colun values
 
 

@@ -104,4 +104,20 @@ public class AmazonSteps extends BaseCode {
     }
 
 
+    @Given("user iterates the colun values")
+    public void userIteratesTheColunValues() {
+
+        WebElement eyTable = driver.findElement(By.xpath("//table[@class='infobox vcard']"));
+
+       int coluOneSize= eyTable.findElements(By.tagName("th")).size();
+
+        for(int i =0 ; i < coluOneSize ; i++){
+
+           String columnOneValue = eyTable.findElements(By.tagName("th")).get(i).getText();
+            System.out.println(columnOneValue);
+        }
+
+
+
+    }
 }

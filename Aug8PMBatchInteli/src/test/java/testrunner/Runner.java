@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     features = {"src/test/resources/featurefile"},
     glue = {"stepdefinationfile"},
-     tags = "@Mouse",
+     tags = "@Table",
         plugin = {"pretty"}
 )
 
